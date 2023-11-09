@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #321b5f; 
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 600px;
+    height: 100vh;
+}
+
+.container-form {
+    background-color: #a159be;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.title {
+    color: #ffffff;
+    background: linear-gradient(120deg, #a159be 0%, #321b5f 100%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 1px 1px ;
+}
+
+.form {
+    padding: 18px;
+    margin: 10px;
+}
+
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+    color:#ffffff
+}
+
+.form-content label {
+    margin-bottom: 4px;
+}
+
+.form-content input {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #321b5f; 
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input {
+    border-color: #6f0000;
+}
+
+.form button:hover {
+    background-color: #5b428c; 
+}
+
+.form-content.error a {
+    color: #6f0000;
+    visibility: visible;
+}
+
+@media screen and (max-width: 1020px) {
+    img {
+       width: 100%;
+    }
+    
+    main {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+       display: none;
+    }
+    
+    main {
+        width: 90%;
+        height: 100vh;
+        padding: 20px;
+    }
+}
