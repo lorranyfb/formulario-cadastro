@@ -11,16 +11,7 @@ form.addEventListener("submit", (event) => {
   checkForm();
 })
 
-email.addEventListener("blur", () => {
-  checkInputEmail();
-})
-
-username.addEventListener("blur", () => {
-  checkInputUsername();
-})
-
-
-function checkInputUsername(){
+function checkUsername(){
   const usernameValue = username.value;
 
   if (usernameValue === ""){
@@ -31,7 +22,7 @@ function checkInputUsername(){
   }
 }
 
-function checkInputEmail(){
+function checkEmail(){
   const emailValue = email.value;
 
   if (emailValue === ""){
@@ -42,7 +33,7 @@ function checkInputEmail(){
   }
 }
 
-function checkInputPassword(){
+function checkPassword(){
   const passwordValue = password.value;
 
   if (passwordValue === ""){
@@ -55,7 +46,7 @@ function checkInputPassword(){
   }
 }
 
-function checkInputPasswordConfirmation(){
+function checkPasswordConfirmation(){
   const passwordValue = password.value;
   const confirmationPasswordValue = passwordConfirmation.value;
 
@@ -70,10 +61,10 @@ function checkInputPasswordConfirmation(){
 }
 
 function checkForm(){
-  checkInputUsername();
-  checkInputEmail();
-  checkInputPassword();
-  checkInputPasswordConfirmation();
+  checkUsername();
+  checkEmail();
+  checkPassword();
+  checkPasswordConfirmation();
 
   const formItems = form.querySelectorAll(".form-content")
 
